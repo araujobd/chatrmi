@@ -1,12 +1,12 @@
 SOURCES = `find src/ -name "*.kt"`
 DIR = build
-OUT = out
+OUT = chat
 CLIENT = ChatClientKt
 SERVER = ChatServerKt
 RUN = java
 
 all: clean
-	-mkdir build
+	-mkdir -p $(DIR)
 	kotlinc $(SOURCES) -include-runtime -d $(DIR)/$(OUT).jar
 
 clean:
