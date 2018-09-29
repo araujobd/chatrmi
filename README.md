@@ -2,7 +2,7 @@
 
 Projeto de implementação de um chat RMI usando *kotlin* para a disciplina de Sistemas distribuídos
 
-#Instruções
+# Instruções
 
 Pode executar o server com:
 
