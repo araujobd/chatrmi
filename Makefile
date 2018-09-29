@@ -1,4 +1,4 @@
-SOURCES = `find . -name "*.kt"`
+SOURCES = `find src/ -name "*.kt"`
 DIR = build
 OUT = out
 CLIENT = ChatClientKt
