@@ -3,6 +3,7 @@ DIR = build
 OUT = out
 CLIENT = ChatClientKt
 SERVER = ChatServerKt
+RUN = java
 
 all: clean
 	-mkdir build
@@ -12,7 +13,7 @@ clean:
 	-rm -rf $(DIR)
 
 server:
-	kotlin -classpath $(DIR)/$(OUT).jar $(SERVER) ${ARGS}
+	$(RUN) -classpath $(DIR)/$(OUT).jar $(SERVER) ${ARGS}
 
 client:
-	kotlin -classpath $(DIR)/$(OUT).jar $(CLIENT) ${ARGS}
+	$(RUN) -classpath $(DIR)/$(OUT).jar $(CLIENT) ${ARGS}
